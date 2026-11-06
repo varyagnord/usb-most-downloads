@@ -1,0 +1,25 @@
+{
+  "version": "1.0.13",
+  "androidVersionCode": 10016,
+  "status": "prerelease_android_not_yet_in_RuStore",
+  "sourceUrl": "https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10016",
+  "packages": [
+    {
+      "name": "usb-most-1.0.13-windows-x86_64.zip",
+      "bytes": 2406014,
+      "sha256": "983fe828d15bcd53470a9e0f770ef11ba8488032061621085a8e7e51d47b3d4e",
+      "receiver_sha256": "29be5131ec194cec36c83a7addc51a2b1ee808aa935212982506d62cb996b813",
+      "content_verified_after_packaging": true
+    },
+    {
+      "name": "usb-most-1.0.13-linux-x86_64.tar.gz",
+      "bytes": 2649367,
+      "sha256": "e8ada2ac286f21cf47e7c526fdd07659283f6956ede37bbb9a0d60e9952843b5",
+      "receiver_sha256": "b616b02be60a17e7f2eccbe135f82bc294cf1afcface614bd7fe70d834a195b1",
+      "content_verified_after_packaging": true
+    }
+  ],
+  "rustoreListingUrl": null,
+  "verifiedWindows": "Windows11 LTSC2024 build26100.1742, Secure Boot on, HVCI not tested",
+  "verifiedLinux": "Ubuntu24.04.5 with vhci_hcd; Android SSH/TLS tested; graphical standalone launcher not tested"
+}
