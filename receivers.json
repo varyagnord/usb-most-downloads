@@ -20,6 +20,6 @@
     }
   ],
   "rustoreListingUrl": null,
-  "verifiedWindows": "Win11 Enterprise LTSC2024 26100.9457; exact63c5 native/SCM/signed kernel/Android SSH+TLS; current GUI qualification separate",
+  "verifiedWindows": "Win11 Enterprise LTSC2024 26100.9457; exact63c5 native/SCM/signed kernel/Android SSH+TLS and current published ZIP ordinary-user/other-admin UAC reject+accept, TokenElevation/ordinary browser/ACL/ready/Ctrl+C/cleanup. Not fresh OS/driver, HVCI or MOTW.",
   "verifiedLinux": "Debian13, exactac1 legacy migration/restart/current APK18 active storage upgrade API26/31 and Android31 SSH/TLS; other OS/GUI cases separate"
 }
