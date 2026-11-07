@@ -1,25 +1,25 @@
 {
   "version": "1.0.13",
-  "androidVersionCode": 10017,
+  "androidVersionCode": 10018,
   "status": "prerelease_android_not_yet_in_RuStore",
-  "sourceUrl": "https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10017",
+  "sourceUrl": "https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10018",
   "packages": [
     {
       "name": "usb-most-1.0.13-windows-x86_64.zip",
-      "bytes": 2405989,
-      "sha256": "75ec018af96eebf02671eb69956526119f2f5252ab6feffa86547d44feec5458",
-      "receiver_sha256": "c361c62b69fe2ca41f52f09e428cfa697e5cc7227d74d06110d52b8c917227aa",
+      "bytes": 2405995,
+      "sha256": "f414e783e94d7188f137bd856d98a1273a63dd171f1bf1352809b885af9f3b49",
+      "receiver_sha256": "63c5b07e9eb3afda22adb2c22c05ae8b387fbc58d5dc8be0d38e736260d3f081",
       "content_verified_after_packaging": true
     },
     {
       "name": "usb-most-1.0.13-linux-x86_64.tar.gz",
-      "bytes": 2652494,
-      "sha256": "026e197c121f0399683139c8f8a064d1360a9d66b2088e210c14d3216eba2c5f",
-      "receiver_sha256": "a1c9ce9b292e47ca052d56e7f60d17ed1f10bd821fbc07abdf2acff9c5ddd9b5",
+      "bytes": 2652694,
+      "sha256": "c6d69820490731eed37874f74a6be6eb297b4ecfb28194937e7db19b398c24f0",
+      "receiver_sha256": "ac1c682e0440fbd9fad81f665fc87b4b4ae3fe27098e837fb27a625800dd6b3d",
       "content_verified_after_packaging": true
     }
   ],
   "rustoreListingUrl": null,
-  "verifiedWindows": "Windows11 LTSC2024 26100.1742, SecureBoot on, current native/kernel/Android SSH+TLS; HVCI/MOTW and current rebuilt EXE interactive UAC not retested",
-  "verifiedLinux": "Ubuntu24.04.5 with vhci_hcd; current Android SSH/TLS; existing-ready PolicyKit/browser/ordinary ownership/SIGINT/SIGTERM EOF cleanup. Fresh GUI install remains untested"
+  "verifiedWindows": "Win11 Enterprise LTSC2024 26100.9457; exact63c5 native/SCM/signed kernel/Android SSH+TLS; current GUI qualification separate",
+  "verifiedLinux": "Debian13, exactac1 legacy migration/restart/current APK18 active storage upgrade API26/31 and Android31 SSH/TLS; other OS/GUI cases separate"
 }
