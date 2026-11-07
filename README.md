@@ -6,6 +6,11 @@
 
 Предварительный выпуск **1.0.13 / vc10016**:
 
+Linux GUI: при закрытии через Ctrl+C в этой версии может завершиться браузер
+и остаться приватный временный HTML. Исправление проверено для следующей сборки;
+этот архив сохранён без замены. Для текущей версии используйте SSH-подготовку
+из приложения. Windows-пакет этим дефектом не затронут.
+
 - [Windows x64 — ZIP](https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10016/usb-most-1.0.13-windows-x86_64.zip)
 - [Linux x86_64 — tar.gz](https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10016/usb-most-1.0.13-linux-x86_64.tar.gz)
 - [Контрольные суммы](https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10016/SHA256SUMS)
@@ -30,8 +35,8 @@ Ubuntu24.04.5 и эмуляторы Android. Windows Memory Integrity/HVCI, вс
 версии ОС и произвольные физические USB не подтверждены. Windows-оболочка
 установки проверена через настоящий UAC/браузер; её EXE пока без Authenticode,
 поэтому Windows показывает неизвестного издателя. Драйвер контроллера подписан.
-Графический Linux-лаунчер пока проверен по составу/синтаксису; Linux SSH/TLS
-проверены на изолированной VM. Изохронные передачи USB не поддерживаются.
+В графическом Linux-лаунчере10016 найден указанный выше дефект закрытия;
+Linux SSH/TLS проверены на изолированной VM. Изохронные передачи USB не поддерживаются.
 
 Каждый архив содержит лицензионные уведомления и SHA256SUMS своих файлов.
 [Точные исходники и сборка](https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10016).
