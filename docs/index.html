@@ -38,6 +38,8 @@
     a:focus-visible { outline: 3px solid #1b61be; outline-offset: 4px; }
     .next { margin-top: 1.25rem; }
     .next p { margin-top: .55rem; color: var(--muted); }
+    #payment-return { display: none; }
+    #payment-return:target { display: block; margin: 0 0 1rem; }
     footer { margin-top: 1.25rem; color: var(--muted); }
     footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem 1rem; padding: 0; margin: .3rem 0 0; }
     footer a { display: inline-flex; align-items: center; min-height: 2.75rem; }
@@ -53,6 +55,10 @@
       <h1>USB Мост</h1>
       <p>Подключите USB-токен к телефону или планшету Android и используйте его на своём компьютере с Windows или Linux.</p>
     </header>
+    <section class="next" id="payment-return" aria-labelledby="return-heading">
+      <h2 id="return-heading">Вернитесь в USB Мост</h2>
+      <p>Если оплата прошла, приложение проверит её при возвращении. Можно также нажать «Проверить оплату».</p>
+    </section>
     <div class="releases" aria-label="Установщики">
       <article>
         <h2>Windows x64</h2>
@@ -73,6 +79,7 @@
       <h2 id="purchase">Стоимость Android-приложения</h2>
       <p>После выпуска в RuStore первые 7 дней работы будут бесплатными. Затем полный доступ можно будет открыть за 699 ₽ одним платежом. Подписки и автоматических списаний нет.</p>
       <p>Оплата через CloudPayments готовится к запуску. Запуск покупки будет доступен в приложении. По вопросам доступа, чеков и возврата пишите в <a href="mailto:varyagnord@yandex.ru">поддержку USB Моста</a>.</p>
+      <p><a href="offer.html">Условия покупки и возврата</a></p>
       <p>Разработчик и продавец — ООО «Альфа-ИТ», ИНН 2900000310, ОГРН 1232900006239.</p>
     </section>
     <footer>
