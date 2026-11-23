@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Приёмник USB Моста для Windows и Linux. Скачайте архив на компьютер и подключите Android-устройство по QR-коду.">
+  <title>Скачать USB Мост для компьютера</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #15283b;
+      background: #f2f6fc;
+      --blue: #154f9e;
+      --muted: #455c72;
+      --border: #cddbec;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.55; }
+    main { width: min(66rem, calc(100% - 2rem)); margin: auto; padding: clamp(2rem, 7vw, 5rem) 0 2rem; }
+    header { max-width: 45rem; margin-bottom: clamp(1.5rem, 3vw, 2.75rem); }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: clamp(2rem, 1.35rem + 4vw, 4rem); line-height: 1.08; letter-spacing: -.04em; }
+    header p { margin-top: 1rem; color: var(--muted); font-size: 1.125rem; }
+    .releases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    article, .next { background: white; border: 1px solid var(--border); border-radius: 1.25rem; padding: clamp(1.25rem, 3vw, 2rem); }
+    article { display: flex; flex-direction: column; align-items: flex-start; }
+    h2 { font-size: 1.45rem; line-height: 1.2; }
+    article p { margin: .75rem 0 1.4rem; color: var(--muted); }
+    code { font-family: ui-monospace, monospace; color: #193856; overflow-wrap: anywhere; }
+    a { color: var(--blue); text-underline-offset: .2em; }
+    .download {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 3rem;
+      margin-top: auto; padding: .65rem 1.15rem; border-radius: .65rem;
+      background: var(--blue); color: white; font-weight: 650; text-decoration: none;
+    }
+    .download:hover { background: #103e7c; }
+    a:focus-visible { outline: 3px solid #1b61be; outline-offset: 4px; }
+    .next { margin-top: 1.25rem; }
+    .next p { margin-top: .55rem; color: var(--muted); }
+    footer { margin-top: 1.25rem; color: var(--muted); }
+    footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem 1rem; padding: 0; margin: .3rem 0 0; }
+    footer a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+    @media (max-width: 40rem) {
+      .releases { grid-template-columns: 1fr; }
+      .download { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>USB Мост для компьютера</h1>
+      <p>Откройте эту страницу на компьютере, к которому будет подключаться ваш телефон или планшет.</p>
+    </header>
+    <div class="releases" aria-label="Установщики">
+      <article>
+        <h2>Windows x64</h2>
+        <p>Распакуйте ZIP, запустите <code>USB-Most-Setup.cmd</code> и подтвердите запрос администратора.</p>
+        <a class="download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-windows-x86_64.zip">Скачать для Windows</a>
+      </article>
+      <article>
+        <h2>Linux x86‑64</h2>
+        <p>Распакуйте архив и запустите <code>./USB-Most-Setup.sh</code> в терминале графического сеанса. Нужны systemd и модуль vhci_hcd.</p>
+        <a class="download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-linux-x86_64.tar.gz">Скачать для Linux</a>
+      </article>
+    </div>
+    <section class="next" aria-labelledby="connect">
+      <h2 id="connect">Подключение по QR-коду</h2>
+      <p>После установки откройте мастер на компьютере. В Android выберите «Подключение компьютера → QR или код» и отсканируйте QR-код из мастера. Для сервера без графического сеанса настройте приёмник через SSH из приложения.</p>
+    </section>
+    <footer>
+      <p>Предварительный комплект приёмников 1.0.13, сборка 10018.</p>
+      <ul>
+        <li><a href="https://github.com/varyagnord/usb-most-downloads/releases/tag/v1.0.13-vc10018">Совместимость и примечания к выпуску</a></li>
+        <li><a href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/SHA256SUMS">Контрольные суммы SHA‑256</a></li>
+        <li><a href="https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10018">Исходники GPLv3</a></li>
+        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+        <li><a href="mailto:varyagnord@yandex.ru">Написать в поддержку</a></li>
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>
