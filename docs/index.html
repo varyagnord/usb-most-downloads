@@ -3,74 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="USB Мост передаёт USB-токены с телефона или планшета Android на компьютер. Скачайте приёмник для Windows или Linux и подключитесь по QR-коду.">
-  <meta name="theme-color" content="#f3f6fa">
-  <title>USB Мост — приёмник для Windows и Linux</title>
+  <meta name="description" content="Загрузка и установка приёмника USB Моста для Windows и Linux. Подключение USB-токенов с Android по сети.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>USB Мост — загрузка для компьютера</title>
+  <link rel="icon" href="usb-most.png" type="image/png">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
   <a class="skip" href="#main">К содержанию</a>
-  <header class="topbar wrap">
-    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>USB Мост</a>
-    <nav aria-label="Разделы страницы"><a href="#downloads">Загрузки</a><a href="#connect">Подключение</a></nav>
+  <header class="masthead wrap">
+    <a class="brand" href="./"><img src="usb-most.png" width="28" height="28" alt="">USB Мост</a>
+    <nav aria-label="Навигация"><a href="#connect">Установка</a><a href="mailto:varyagnord@yandex.ru">Поддержка</a></nav>
   </header>
   <main class="wrap" id="main">
     <section class="payment-return" id="payment-return" aria-labelledby="return-heading">
       <h2 id="return-heading">Вернитесь в USB Мост</h2>
-      <p>Приложение проверит статус покупки при возвращении. Статус также можно обновить кнопкой «Проверить оплату».</p>
+      <p>Откройте приложение на Android. Если статус покупки ещё не обновился, нажмите «Проверить оплату».</p>
     </section>
-    <section class="hero" aria-labelledby="title">
-      <div class="hero-copy">
-        <h1 id="title">USB-токен с Android на компьютере</h1>
-        <p>Подключите токен к телефону или планшету через USB. Рабочая программа на компьютере сможет использовать его по сети.</p>
-        <a class="button primary" href="#downloads">Скачать приёмник <span aria-hidden="true">↓</span></a>
-      </div>
-      <figure class="connection-map" aria-label="Токен подключается по USB к Android. Android соединяется по сети с компьютером.">
-        <div class="map-endpoints" aria-hidden="true">
-          <div class="endpoint"><span class="symbol phone"></span><span>Android</span></div>
-          <div class="wire"><span>По сети</span></div>
-          <div class="endpoint"><span class="symbol laptop"></span><span>Компьютер</span></div>
+    <header class="intro" id="downloads">
+      <h1>USB Мост для компьютера</h1>
+      <p>Установите приёмник на компьютер, чтобы пользоваться USB-токеном, подключённым к телефону или планшету Android.</p>
+    </header>
+    <section aria-label="Файлы приёмника">
+      <div class="downloads">
+        <div class="platform">
+          <div><h2>Windows x64</h2><p>ZIP, 2,4 МБ</p></div>
+          <a href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-windows-x86_64.zip">Скачать для Windows</a>
         </div>
-        <div class="map-token" aria-hidden="true"><span class="symbol token"></span><span>USB-токен</span></div>
-      </figure>
-    </section>
-    <section class="section" id="downloads" aria-labelledby="downloads-heading">
-      <div class="section-heading"><h2 id="downloads-heading">Скачать на компьютер</h2><p>Приёмники 1.0.13 · x86‑64</p></div>
-      <div class="releases">
-        <article class="card">
-          <div class="card-heading"><h3>Windows</h3><span class="file-type">ZIP</span></div>
-          <p>Распакуйте архив, запустите <code>USB-Most-Setup.cmd</code> и подтвердите запрос администратора.</p>
-          <a class="button download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-windows-x86_64.zip">Скачать для Windows <span aria-hidden="true">↓</span></a>
-        </article>
-        <article class="card">
-          <div class="card-heading"><h3>Linux</h3><span class="file-type">TAR.GZ</span></div>
-          <p>Распакуйте архив и запустите <code>./USB-Most-Setup.sh</code> в терминале графического сеанса. Нужны systemd и модуль <code>vhci_hcd</code>.</p>
-          <a class="button download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-linux-x86_64.tar.gz">Скачать для Linux <span aria-hidden="true">↓</span></a>
-        </article>
+        <div class="platform">
+          <div><h2>Linux x86‑64</h2><p>TAR.GZ, 2,7 МБ</p></div>
+          <a href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-linux-x86_64.tar.gz">Скачать для Linux</a>
+        </div>
       </div>
       <div class="release-links">
-        <a href="https://github.com/varyagnord/usb-most-downloads/releases/tag/v1.0.13-vc10018">Совместимость и примечания к выпуску</a>
+        <p>Версия приёмников 1.0.13</p>
+        <a href="https://github.com/varyagnord/usb-most-downloads/releases/tag/v1.0.13-vc10018">Совместимость и изменения</a>
         <a href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/SHA256SUMS">Контрольные суммы SHA‑256</a>
       </div>
     </section>
-    <section class="section setup" id="connect" aria-labelledby="connect-heading">
-      <h2 id="connect-heading">Подключить по QR-коду</h2>
-      <ol class="steps">
-        <li><h3>Откройте приёмник</h3><p>Запустите мастер на компьютере и создайте код подключения.</p></li>
-        <li><h3>Отсканируйте код</h3><p>На Android откройте настройку компьютера и выберите подключение по QR-коду.</p></li>
-        <li><h3>Запустите мост</h3><p>Подключите токен к Android, разрешите доступ к нему и нажмите «Запустить мост».</p></li>
-      </ol>
-      <p class="aside">Для сервера без графического сеанса настройте приёмник через SSH из приложения.</p>
+    <section class="rule-section" id="connect" aria-labelledby="connect-heading">
+      <h2 id="connect-heading">Установка и подключение</h2>
+      <div class="instructions">
+        <dl>
+          <dt>Windows</dt>
+          <dd>Распакуйте ZIP, запустите <code>USB-Most-Setup.cmd</code> и подтвердите запрос администратора.</dd>
+          <dt>Linux</dt>
+          <dd>Распакуйте архив и запустите <code>./USB-Most-Setup.sh</code> в терминале графического сеанса. Нужны systemd и модуль <code>vhci_hcd</code>.</dd>
+        </dl>
+        <div>
+          <ol>
+            <li>Откройте приёмник на компьютере и создайте QR-код.</li>
+            <li>На Android выберите подключение по QR-коду и отсканируйте его.</li>
+            <li>Подключите токен к Android, разрешите доступ и нажмите «Запустить мост».</li>
+          </ol>
+          <p class="note">На сервере без графического сеанса настройте приёмник через SSH из приложения.</p>
+        </div>
+      </div>
     </section>
-    <section class="section app-info" id="purchase" aria-labelledby="purchase-heading">
-      <div><h2 id="purchase-heading">Приложение для Android</h2><p>Версия для RuStore готовится к выпуску. Первые 7 дней работы будут бесплатными, затем полный доступ можно будет открыть за 699 ₽ одним платежом без подписки. Заказ создаётся в приложении, а платёж подтверждается на странице CloudPayments.</p></div>
-      <a class="button download" href="offer.html">Условия покупки и возврата <span aria-hidden="true">↗</span></a>
+    <section class="rule-section purchase" id="purchase" aria-labelledby="purchase-heading">
+      <h2 id="purchase-heading">Приложение для Android</h2>
+      <div><p>Версия для RuStore готовится к выпуску. Первые 7 дней работы будут бесплатными, затем полный доступ будет стоить 699 ₽. Покупка разовая, через CloudPayments из приложения.</p><a href="offer.html">Условия покупки и возврата</a></div>
     </section>
   </main>
-  <footer class="wrap footer">
-    <div><strong>ООО «Альфа-ИТ»</strong><p>ИНН 2900000310 · ОГРН 1232900006239</p></div>
+  <footer class="footer wrap">
+    <div><p>ООО «Альфа-ИТ»</p><p class="note">ИНН 2900000310, ОГРН 1232900006239</p></div>
     <nav aria-label="Документы и поддержка">
-      <a href="https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10018">Исходники приёмников GPLv3</a>
+      <a href="https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10018">Исходники приёмников</a>
       <a href="privacy.html">Конфиденциальность</a>
       <a href="mailto:varyagnord@yandex.ru">Поддержка</a>
     </nav>
