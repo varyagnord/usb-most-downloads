@@ -3,95 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="USB Мост подключает USB-токен с телефона или планшета Android к компьютеру с Windows или Linux. Здесь можно скачать приёмник и узнать условия покупки.">
-  <title>USB Мост — подключение USB-токенов с Android</title>
-  <style>
-    :root {
-      color-scheme: light;
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      color: #15283b;
-      background: #f2f6fc;
-      --blue: #154f9e;
-      --muted: #455c72;
-      --border: #cddbec;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; line-height: 1.55; }
-    main { width: min(66rem, calc(100% - 2rem)); margin: auto; padding: clamp(2rem, 7vw, 5rem) 0 2rem; }
-    header { max-width: 45rem; margin-bottom: clamp(1.5rem, 3vw, 2.75rem); }
-    h1, h2, p { margin: 0; }
-    h1 { font-size: clamp(2rem, 1.35rem + 4vw, 4rem); line-height: 1.08; letter-spacing: -.04em; }
-    header p { margin-top: 1rem; color: var(--muted); font-size: 1.125rem; }
-    .releases { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-    article, .next { background: white; border: 1px solid var(--border); border-radius: 1.25rem; padding: clamp(1.25rem, 3vw, 2rem); }
-    article { display: flex; flex-direction: column; align-items: flex-start; }
-    h2 { font-size: 1.45rem; line-height: 1.2; }
-    article p { margin: .75rem 0 1.4rem; color: var(--muted); }
-    code { font-family: ui-monospace, monospace; color: #193856; overflow-wrap: anywhere; }
-    a { color: var(--blue); text-underline-offset: .2em; }
-    .download {
-      display: inline-flex; align-items: center; justify-content: center; min-height: 3rem;
-      margin-top: auto; padding: .65rem 1.15rem; border-radius: .65rem;
-      background: var(--blue); color: white; font-weight: 650; text-decoration: none;
-    }
-    .download:hover { background: #103e7c; }
-    a:focus-visible { outline: 3px solid #1b61be; outline-offset: 4px; }
-    .next { margin-top: 1.25rem; }
-    .next p { margin-top: .55rem; color: var(--muted); }
-    #payment-return { display: none; }
-    #payment-return:target { display: block; margin: 0 0 1rem; }
-    footer { margin-top: 1.25rem; color: var(--muted); }
-    footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: .25rem 1rem; padding: 0; margin: .3rem 0 0; }
-    footer a { display: inline-flex; align-items: center; min-height: 2.75rem; }
-    @media (max-width: 40rem) {
-      .releases { grid-template-columns: 1fr; }
-      .download { width: 100%; }
-    }
-  </style>
+  <meta name="description" content="USB Мост передаёт USB-токены с телефона или планшета Android на компьютер. Скачайте приёмник для Windows или Linux и подключитесь по QR-коду.">
+  <meta name="theme-color" content="#f3f6fa">
+  <title>USB Мост — приёмник для Windows и Linux</title>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>USB Мост</h1>
-      <p>Подключите USB-токен к телефону или планшету Android и используйте его на своём компьютере с Windows или Linux.</p>
-    </header>
-    <section class="next" id="payment-return" aria-labelledby="return-heading">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="topbar wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>USB Мост</a>
+    <nav aria-label="Разделы страницы"><a href="#downloads">Загрузки</a><a href="#connect">Подключение</a></nav>
+  </header>
+  <main class="wrap" id="main">
+    <section class="payment-return" id="payment-return" aria-labelledby="return-heading">
       <h2 id="return-heading">Вернитесь в USB Мост</h2>
-      <p>Если оплата прошла, приложение проверит её при возвращении. Можно также нажать «Проверить оплату».</p>
+      <p>Приложение проверит статус покупки при возвращении. Статус также можно обновить кнопкой «Проверить оплату».</p>
     </section>
-    <div class="releases" aria-label="Установщики">
-      <article>
-        <h2>Windows x64</h2>
-        <p>Распакуйте ZIP, запустите <code>USB-Most-Setup.cmd</code> и подтвердите запрос администратора.</p>
-        <a class="download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-windows-x86_64.zip">Скачать для Windows</a>
-      </article>
-      <article>
-        <h2>Linux x86‑64</h2>
-        <p>Распакуйте архив и запустите <code>./USB-Most-Setup.sh</code> в терминале графического сеанса. Нужны systemd и модуль vhci_hcd.</p>
-        <a class="download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-linux-x86_64.tar.gz">Скачать для Linux</a>
-      </article>
-    </div>
-    <section class="next" aria-labelledby="connect">
-      <h2 id="connect">Подключение по QR-коду</h2>
-      <p>После установки откройте мастер на компьютере. В Android выберите «Подключение компьютера → QR или код» и отсканируйте QR-код из мастера. Для сервера без графического сеанса настройте приёмник через SSH из приложения.</p>
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <h1 id="title">USB-токен с Android на компьютере</h1>
+        <p>Подключите токен к телефону или планшету через USB. Рабочая программа на компьютере сможет использовать его по сети.</p>
+        <a class="button primary" href="#downloads">Скачать приёмник <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="connection-map" aria-label="Токен подключается по USB к Android. Android соединяется по сети с компьютером.">
+        <div class="map-endpoints" aria-hidden="true">
+          <div class="endpoint"><span class="symbol phone"></span><span>Android</span></div>
+          <div class="wire"><span>По сети</span></div>
+          <div class="endpoint"><span class="symbol laptop"></span><span>Компьютер</span></div>
+        </div>
+        <div class="map-token" aria-hidden="true"><span class="symbol token"></span><span>USB-токен</span></div>
+      </figure>
     </section>
-    <section class="next" aria-labelledby="purchase">
-      <h2 id="purchase">Стоимость Android-приложения</h2>
-      <p>После выпуска в RuStore первые 7 дней работы будут бесплатными. Затем полный доступ можно будет открыть за 699 ₽ одним платежом. Подписки и автоматических списаний нет.</p>
-      <p>Оплата через CloudPayments готовится к запуску. Запуск покупки будет доступен в приложении. По вопросам доступа, чеков и возврата пишите в <a href="mailto:varyagnord@yandex.ru">поддержку USB Моста</a>.</p>
-      <p><a href="offer.html">Условия покупки и возврата</a></p>
-      <p>Разработчик и продавец — ООО «Альфа-ИТ», ИНН 2900000310, ОГРН 1232900006239.</p>
+    <section class="section" id="downloads" aria-labelledby="downloads-heading">
+      <div class="section-heading"><h2 id="downloads-heading">Скачать на компьютер</h2><p>Приёмники 1.0.13 · x86‑64</p></div>
+      <div class="releases">
+        <article class="card">
+          <div class="card-heading"><h3>Windows</h3><span class="file-type">ZIP</span></div>
+          <p>Распакуйте архив, запустите <code>USB-Most-Setup.cmd</code> и подтвердите запрос администратора.</p>
+          <a class="button download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-windows-x86_64.zip">Скачать для Windows <span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="card">
+          <div class="card-heading"><h3>Linux</h3><span class="file-type">TAR.GZ</span></div>
+          <p>Распакуйте архив и запустите <code>./USB-Most-Setup.sh</code> в терминале графического сеанса. Нужны systemd и модуль <code>vhci_hcd</code>.</p>
+          <a class="button download" href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/usb-most-1.0.13-linux-x86_64.tar.gz">Скачать для Linux <span aria-hidden="true">↓</span></a>
+        </article>
+      </div>
+      <div class="release-links">
+        <a href="https://github.com/varyagnord/usb-most-downloads/releases/tag/v1.0.13-vc10018">Совместимость и примечания к выпуску</a>
+        <a href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/SHA256SUMS">Контрольные суммы SHA‑256</a>
+      </div>
     </section>
-    <footer>
-      <p>Предварительный комплект приёмников 1.0.13, сборка 10018.</p>
-      <ul>
-        <li><a href="https://github.com/varyagnord/usb-most-downloads/releases/tag/v1.0.13-vc10018">Совместимость и примечания к выпуску</a></li>
-        <li><a href="https://github.com/varyagnord/usb-most-downloads/releases/download/v1.0.13-vc10018/SHA256SUMS">Контрольные суммы SHA‑256</a></li>
-        <li><a href="https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10018">Исходники GPLv3</a></li>
-        <li><a href="privacy.html">Политика конфиденциальности</a></li>
-        <li><a href="mailto:varyagnord@yandex.ru">Написать в поддержку</a></li>
-      </ul>
-    </footer>
+    <section class="section setup" id="connect" aria-labelledby="connect-heading">
+      <h2 id="connect-heading">Подключить по QR-коду</h2>
+      <ol class="steps">
+        <li><h3>Откройте приёмник</h3><p>Запустите мастер на компьютере и создайте код подключения.</p></li>
+        <li><h3>Отсканируйте код</h3><p>На Android откройте настройку компьютера и выберите подключение по QR-коду.</p></li>
+        <li><h3>Запустите мост</h3><p>Подключите токен к Android, разрешите доступ к нему и нажмите «Запустить мост».</p></li>
+      </ol>
+      <p class="aside">Для сервера без графического сеанса настройте приёмник через SSH из приложения.</p>
+    </section>
+    <section class="section app-info" id="purchase" aria-labelledby="purchase-heading">
+      <div><h2 id="purchase-heading">Приложение для Android</h2><p>Версия для RuStore готовится к выпуску. Первые 7 дней работы будут бесплатными, затем полный доступ можно будет открыть за 699 ₽ одним платежом без подписки. Заказ создаётся в приложении, а платёж подтверждается на странице CloudPayments.</p></div>
+      <a class="button download" href="offer.html">Условия покупки и возврата <span aria-hidden="true">↗</span></a>
+    </section>
   </main>
+  <footer class="wrap footer">
+    <div><strong>ООО «Альфа-ИТ»</strong><p>ИНН 2900000310 · ОГРН 1232900006239</p></div>
+    <nav aria-label="Документы и поддержка">
+      <a href="https://github.com/varyagnord/usb-most-source/tree/v1.0.13-vc10018">Исходники приёмников GPLv3</a>
+      <a href="privacy.html">Конфиденциальность</a>
+      <a href="mailto:varyagnord@yandex.ru">Поддержка</a>
+    </nav>
+  </footer>
 </body>
 </html>
